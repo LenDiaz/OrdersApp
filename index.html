@@ -1,5 +1,6 @@
 <html ng-app="myOrdersApp">
 <head>
+    <base href="/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -7,11 +8,17 @@
 </head>
 <body>
 
+    <order-list></order-list>
 <div ng-view></div>
 
-<script src="scripts\angular.js"></script>
-<script src="scripts\angular-route.js"></script>
-<script src="app\app.js"></script>
-<script src= "app\controllers\OrdersController.js"></script>
+<script src="scripts/angular.js"></script>
+<script src="scripts/angular-route.js"></script>
+<script src="app/app.js"></script>
+<script src="app/app.config.js"></script>
+<script src= "app/controllers/OrdersController.js"></script>
+<script src= "app/orderslist.module.js"></script>
+<script src= "app/orderslist.component.js"></script>
+
+
 </body>
 </html>

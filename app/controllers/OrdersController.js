@@ -1,5 +1,4 @@
-(function () {
-        var OrdersController = function($scope) {
+const OrdersController = function($scope) {
 
             $scope.sortBy = 'name';
             $scope.reverse = false;
@@ -17,8 +16,3 @@
                     $scope.reverse = !$scope.reverse;
             };
     };
-
-    angular.module('myOrdersApp')
-        .controller('OrdersController',OrdersController)
-
-}());
